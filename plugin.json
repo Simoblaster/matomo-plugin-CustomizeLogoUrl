@@ -16,10 +16,10 @@
     ],
     "support": {
         "email": "simone.saturno@innovaway.it",
-        "issues": "",
-        "source": ""
+        "issues": "https://github.com/Simoblaster/matomo-plugin-CustomizeLogoUrl/issues",
+        "source": "https://github.com/Simoblaster/matomo-plugin-CustomizeLogoUrl"
     },
-    "homepage": "",
+    "homepage": "https://github.com/Simoblaster/matomo-plugin-CustomizeLogoUrl",
     "license": "GPL v3+",
     "license_homepage": "http://www.gnu.org/licenses/gpl.html",
     "keywords": ["logo", "navigation", "configuration", "admin", "settings"]
