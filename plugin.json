@@ -4,7 +4,7 @@
     "description": "Plugin that allows you to configure the destination URL of the Matomo logo through the Admin Dashboard.",
     "theme": false,
     "require": {
-        "matomo": ">=5.0.0"
+        "matomo": ">=5.0.0,<6.0.0-b1"
     },
     "author": "Simone Saturno",
     "authors": [
