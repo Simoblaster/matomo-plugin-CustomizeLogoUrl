@@ -1,6 +1,6 @@
 {
     "name": "CustomizeLogoUrl",
-    "version": "1.0.0",
+    "version": "1.0.3",
     "description": "Plugin that allows you to configure the destination URL of the Matomo logo through the Admin Dashboard.",
     "theme": false,
     "require": {
