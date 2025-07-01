@@ -1,0 +1,26 @@
+{
+    "name": "CustomizeLogoUrl",
+    "version": "1.0.0",
+    "description": "Plugin that allows you to configure the destination URL of the Matomo logo through the Admin Dashboard.",
+    "theme": false,
+    "require": {
+        "matomo": ">=5.0.0"
+    },
+    "author": "Simone Saturno",
+    "authors": [
+        {
+            "name": "Innovaway S.p.A.",
+            "email": "simone.saturno@innovaway.it",
+            "homepage": "https:\/\/innovaway.it"
+        }
+    ],
+    "support": {
+        "email": "simone.saturno@innovaway.it",
+        "issues": "",
+        "source": ""
+    },
+    "homepage": "",
+    "license": "GPL v3+",
+    "license_homepage": "http://www.gnu.org/licenses/gpl.html",
+    "keywords": ["logo", "navigation", "configuration", "admin", "settings"]
+}
