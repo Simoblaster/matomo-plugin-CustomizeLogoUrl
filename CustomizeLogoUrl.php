@@ -47,23 +47,20 @@ class CustomizeLogoUrl extends Plugin
             $logoUrl = $settings->logoUrl->getValue();
             $openInNewTab = $settings->openInNewTab->getValue();
             
-            // Debug: Log obtained values
-            error_log('CustomizeLogoUrl Debug - logoUrl: ' . $logoUrl);
-            error_log('CustomizeLogoUrl Debug - openInNewTab: ' . ($openInNewTab ? 'true' : 'false'));
+            // Prepare configuration array
+            $config = array(
+                'logoUrl' => $logoUrl,
+                'openInNewTab' => $openInNewTab
+            );
             
-            // Add configuration to JavaScript global variables
-            $jsConfig = 'window.CustomizeLogoUrlConfig = {
-    logoUrl: "' . addslashes($logoUrl) . '",
-    openInNewTab: ' . ($openInNewTab ? 'true' : 'false') . '
-};
-console.log("CustomizeLogoUrl: Configuration loaded from server", window.CustomizeLogoUrlConfig);';
+            // Use json_encode to safely encode the configuration
+            $jsConfig = 'window.CustomizeLogoUrlConfig = ' . json_encode($config) . ';';
             
             $out .= $jsConfig;
             
         } catch (\Exception $e) {
-            // Log error without interrupting execution
+            // Log error only when it occurs
             error_log('CustomizeLogoUrl Error: ' . $e->getMessage());
-            error_log('CustomizeLogoUrl Error Stack: ' . $e->getTraceAsString());
         }
     }
 }
