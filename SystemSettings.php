@@ -35,7 +35,7 @@ class SystemSettings extends \Piwik\Settings\Plugin\SystemSettings
      */
     private function createLogoUrlSetting(): SystemSetting
     {
-        return $this->makeSetting('logoUrl', $default = 'https://www.matomo.org', FieldConfig::TYPE_STRING, function (FieldConfig $field) {
+        return $this->makeSetting('logoUrl', $default = \Piwik\SettingsPiwik::getPiwikUrl(), FieldConfig::TYPE_STRING, function (FieldConfig $field) {
             $field->title = 'Logo destination URL';
             $field->uiControl = FieldConfig::UI_CONTROL_TEXT;
             $field->description = 'URL to navigate to when clicking on the Matomo logo. Must be a valid URL (http:// or https://).';

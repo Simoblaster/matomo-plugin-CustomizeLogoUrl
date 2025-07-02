@@ -29,7 +29,7 @@ class Controller extends \Piwik\Plugin\Controller
         } catch (\Exception $e) {
             // In case of error, return default configuration
             return json_encode(array(
-                'logoUrl' => 'https://www.matomo.org',
+                'logoUrl' => \Piwik\SettingsPiwik::getPiwikUrl(),
                 'openInNewTab' => false
             ));
         }
